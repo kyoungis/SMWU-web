@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>노선도</title>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f7f7f7; }
+    .center-box {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;
+    }
+    .station-list {
+      display: flex; flex-direction: column; align-items: flex-start;
+      background: #fff; border-radius: 12px; padding: 40px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .station-row { display: flex; align-items: center; margin-bottom: 18px; }
+    .station-dot {
+      width: 18px; height: 18px; background: #98d6b7; border-radius: 50%; margin-right: 10px;
+      border: 3px solid #fff; box-shadow: 0 0 0 2px #98d6b7;
+    }
+    .station-name { font-size: 1.1em; font-weight: 500; margin-right: 28px; min-width: 50px; }
+    .line-path { width: 4px; height: 30px; background: #98d6b7; margin: 0 7px; border-radius: 2px; }
+    .back-btn {
+      margin-top: 30px; padding: 12px 28px; background: #98d6b7; color: #fff; border: none;
+      border-radius: 8px; font-size: 1.1em; cursor: pointer;
+    }
+    .back-btn:hover { background: #5cb98a; }
+  </style>
+</head>
+<body>
+  <div class="center-box">
+    <div class="station-list">
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">문산</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">파주</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">월롱</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">운정</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">금릉</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">금촌</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">야당</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">탄현</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">일산</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">곡산</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">백마</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">풍산</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">대곡</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">능곡</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">행신</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">수색</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">한국항공대</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">강매</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">디지털미디어시티</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">가좌</span>
+        <div class="line-path"></div>
+        <div class="station-dot"></div><span class="station-name">신촌</span>
+      </div>
+      <div class="station-row">
+        <div class="station-dot"></div><span class="station-name">서울역</span>
+      </div>
+    </div>
+    <button class="back-btn" onclick="location.href='section.html'">이전</button>
+  </div>
+</body>
+</html>

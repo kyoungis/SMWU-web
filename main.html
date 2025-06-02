@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>2412253 임다경</title>
+  <meta charset="UTF-8">
+  <title>경의중앙선 화장실 지도 - 메인</title>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f7f7f7; }
+    .center-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .circle {
+      width: 180px; height: 180px;
+      background: #98d6b7;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 2.2em; font-weight: 700;
+      border: 8px solid #d3d3d3;
+      margin: 30px 0;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+    .circle:hover {
+      box-shadow: 0 0 0 8px #b0e3c7;
+    }
+    h1 { margin-bottom: 0; }
+    h2 { margin-top: 0; font-weight: 400; color: #555; }
+  </style>
 </head>
 <body>
-    <p><a href="introduce.html">자기소개</a></p>
-    <p><a href="class_list.html">25년 1학기 강의 목록</a></p>
-    <p><a href="timetable.html">25년 1학기 시간표</a></p>
-    <p><a href="register.html">동아리 가입 양식</a></p>
+  <div class="center-box">
+    <h1>개찰구 안</h1>
+    <div class="circle" onclick="location.href='login.html'">
+      경의<br>중앙
+    </div>
+    <h2>화장실 지도</h2>
+  </div>
 </body>
 </html>
